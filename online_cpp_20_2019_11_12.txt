@@ -1,0 +1,154 @@
+20. Ders 12 Kasim 2019
+
+Konu: Namespaces
+
+C'de butun kutuphanlerin ve kendi tanimladigimiz isimler ayni isim alaninda (global namespace)
+ayni isimde iki tanimlama yapilamayacagindan name collision oluyor genelde. syntax hatasi olacak.
+C 20K 25K satir kodlu buyuk olmayan programlar icin uygun.
+
+C++ da yada oop da milyonlarca kod satirindan ve bir suru kutuphaneden bahsediliyor. name collision olmamasi mumkun degil.
+
+C de dilin kendinden gelen ve bu durum icin bir arac yok. Bunun yerine isimler on ekler vs ile uzatiliyor.
+
+C++ da ise namespace ile bu cozuluyor.
+
+namespace bir scope tur (kapsam)
+
+c de scope
+file scope (global alanda bildirilen, tanimdan dosya sonuna kadar)
+block scope (block icinde tanimli, tanimdan block sonuna kadar)
+func prototype scope (func bildiriminde, parametre parantezi icinde tanimli sadece)
+func scope (label larin etiketlerin scope u, func icinde nerede tanimlanirsa tanimlansin tamaminda gecerli, goto da kullaniliyor)
+
+file scope yerine namespace scope geldi cpp de
+
+local duzeyde bir namespace olusturulamaz
+
+global duzeyde yapilabilir
+
+namespace icinde de namespace olusturulabilir (nested namespace)
+
+namespace Neco
+{
+
+}
+
+siniflar gibi degil sonunda ; atomu yok
+koyunca syntax hatasi alinmaz
+
+namespace lerde siniflarda oldugu gibi access control yok (erisim kontrolu yok public private vs gibi)
+
+namespace in ismi olmayabilir. diger namespacelerden farkli kurallara tabidir. (unnamed namespace yada anonmys namespace)
+
+standard kutuphanede hersey std namespace i icinde tanimlanmis
+
+namespace bir scope oldugu icin name lookup ta var
+name lookup altin kurali; bir kez aranir, bulununca bulundugu yerde biter. syntax hatasi vs olsada baska isim arama yapilmaz. diger bazi dillerde bu ozellik var.
+arama yukari dogru yapilir yani kullanimdan once tanimlanmis olmali
+
+:: scope resolution operator (pratikte colon diye kullaniliyor)
+
+::x seklinde kullanilirsa block ta aranmadan global namespace de aranir
+
+bir isim yalin olarak kullanilir yada ::(unary yada binary) operatorunun parametresi olarak kullanilir
+qualified name std::cout
+unqualified name cout
+
+namespace ismi de isim arama kurallarina tabi 
+
+ayri baslik dosyalarinda tanimlanan seylerde ayni namespace de olabilir
+namespace ler kumulatif
+birden fazla tanimlanip kullanildiginda genisletilmis oluyor
+standard kutuphanede boyle mesela
+
+namespace kullanim alanlari
+--isim cakismasini engellemek icin
+--c++11 ile enum class lar geldi eski enum lar scope ozelligine sahip degil
+bunu eski kodlarda engellemek ya isimleri ozellestirerek olabilir yada namespace ekleyerek
+--boost taki kullanim gibi, islevsel ozellestirme
+--namespace detail gibi bir nested namespace ile implementation ve interface ayriliyor. client koddaki erismeyi ayristirmak icin. Erisimi engellemez.
+
+farkli namespaceler icinde func overloading olmaz (ayni isimde func olsada overload degildir)
+
+namespace in kendi isminin de cakisma ihtimali var (ayni isimde class yada func tanimini kontrol et, namespace ayni isimle birden fazla tanimlanabilir cunku)
+
+namespace de tanimlanmis bir ismin nitelendemeden kullanilabilecegi 3 durum var
+--ayni namespace icinde ise nitelemeden kullanilabilir. baslik dosyasina denk gelen kaynak dosyada da ayni namespace tanimlanip kullaniliyor.(bazi glistiriciler yapiyor best practice degil)
+--using declerative
+--using directive
+--ADL (argument dependent lookup)
+
+using declarionin da scope'u var. Tanimlandigi scope'ta etkin.
+using declarion tanimlandigi scope'a namespace'i enjecte ediyor.
+artik o scope ta birden fazla namespace deki isim tanimlanamaz. orn: using neco::x; int x; //syntax error
+
+using std::cout, std::endl;
+virgul ile ayrilarak bu tanimin kullanimi c++17 ile gelen ekleme.
+
+using directive
+bir namespace icindeki tanimlamalarin tamamini kullanabilmek icin
+using namespace std;
+using directive'in de bir scope'u var
+tanimlandigi scope'da etkin
+using declarion ile ayni ozelliklere sahip degil, enjecte etme burada gecerli degil. Yani ayni isimde baska tanim yapilabilir.
+using directive'i namespace icindeki tanimlamalarin sanki o scope disinda tanimlanmis gibi olmasini sagliyor.
+
+C++17 den once nested namespace icin ya namespace leri ic ice yazacaktik yada kumulatif olma ozelligini kulalanacaktik.
+namespace A::B::C{ }
+C++17 de bunu kullanmak icin daha oncesinde A ve B namespace lerinin tanimlanmasina gerek yok.
+
+
+nec::A ax;
+foo(ax); // foo nec namespace de olmasina ragmen nitelenmeden cagrilabilir arguman dependent lookup
+
+ptr yada referens ta olsa farketmez
+primitive turler buna dahil degil.
+
+namespace nec{
+	struct A{};
+	void foo(std::vector<A>){}
+}
+
+main()
+{
+	std::vector<nec::A> vec;
+	foo(vec); // nec namespace icinde de arama yapildi
+}
+
+isim ekstra olarak o namespace'de de araniyor.
+
+std::cout ta adl var
+adl olmasaydi global operator overloading olamazdi
+
+static global in c ?  internal linkage
+unnamed namespace
+namespace {
+	int x, y, z;
+}
+main()
+{
+	x =10; // syntax hatasi yok
+}
+ama disariya kapali. bu jaynak dosyayi ilgilendiriyor sadece.
+static globallere gore daha derli toplu bir yerde duruyor.
+burada siniflar yada typedef lerde kullanilabilir.
+bu dosya icin global, dogrudan isimleri ile erisilebilir ama disariya kapali.
+core guidelines da belirtilmis static global yerine isimsiz namespace kullan
+
+namspace alias
+namespace neco{ int x, y, z;}
+namespace ali = neco;
+
+artik neco namespace ine es isim olarak ali de kullanilabilir.
+neco::x = 4;
+ali::x = 5;
+
+kullanim alanlarinin bazilari
+--bazi durumlarda yazma zahmetinden kurtariyor
+namespace neco::ali::hasan::mehmet{int x; }
+namespace ahmet = neco::ali::hasan::mehmet;
+ahmet::x = 5;
+--namespace isim cakismasinda es isim vererek kurtarilir.
+--versiyonlama icin kullanilir.
+
+
