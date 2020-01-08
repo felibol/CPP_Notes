@@ -1,70 +1,98 @@
-Video Icerikleri
-2019/09/03 Ders 01
+# Video Icerikleri
 
-2019/09/05 Ders 02
-1- Initiliazation
-2- reference semantics
+## 2019/09/03 Lecture 01
 
-2019/09/10 Ders 03
-1- const expression
-2- constexpr funtion
-3- type deduction
+## 2019/09/05 Lecture 02
 
-2019/09/12 Ders 04
-1- auto
-2- decltype
+- Initiliazation
 
-2019/09/17 Ders 05
-1- default argument
-2- function overloading
+## 2019/09/10 Lecture 03
 
-2019/09/19 Ders 06
-1- function overload resolution
-	1a- exact match
-	1b- promotion
-	1c- conversion
-2- function delete 
-3- enum ve enum class
+- Initiliazation
+- reference semantics
 
-2019/09/24 Ders 07
-1- extern "C" bildirimi
-2- Tur donusum operatorleri
-3- Classes
+## 2019/09/12 Lecture 04
 
-2019/09/26
-Deprem nedeniyle iptal edildi.
+- const expression
+- constexpr function
+- type deduction
+- auto
+- decltype
 
-2019/10/01 Ders 08
-1- Class member functions static, non static, const, non const
-2- Function Overloading in classes
-3- This pointer
+## 2019/09/17 Lecture 05
 
-class scope kavramı
-sınıflar ve isim arama (name lookup)
-erişim kontrolü (access control) ve veri gizleme (data hiding)
-public öğeler
-private öğeler
-protected öğeler
-sınıfların öğeleri (class members)
-sınıfların veri öğeleri (data members)
-non-static veri öğeleri
-mutable veri öğeleri
-static veri öğeleri
-sınıfların üye işlevleri
-non-static üye işlevler
-const üye işlevler
-static üye işlevler
+- default argument
+- function overloading
 
-2019/10/03 Ders 09
-sınıfların kurucu işlevleri (constructors)
-kurucu işlev ilk değer verme listesi (constructor initializer list)
-delege eden kurucu işlevler (delegating constructors)
-sınıfların sonlandırıcı işlevleri (destructors)
+## 2019/09/19 Lecture 06
 
-2019/10/08 Ders 10
+- function overload resolution
+  - 1a- exact match
+  - 1b- promotion
+  - 1c- conversion
+- function delete 
+- enum ve enum class
+
+## 2019/09/24 Lecture 07
+
+- extern "C" bildirimi
+- Tur donusum operatorleri
+- Classes
+
+## 2019/09/26
+
+- Deprem nedeniyle iptal edildi.
+
+## 2019/10/01 Lecture 08
+
+- Class member functions static, non static, const, non const
+- Function Overloading in classes
+- This pointer
+
+- class scope kavramı
+- sınıflar ve isim arama (name lookup)
+- erişim kontrolü (access control) ve veri gizleme (data hiding)
+- public öğeler
+- private öğeler
+- protected öğeler
+- sınıfların öğeleri (class members)
+- sınıfların veri öğeleri (data members)
+- non-static veri öğeleri
+- mutable veri öğeleri
+- static veri öğeleri
+- sınıfların üye işlevleri
+- non-static üye işlevler
+- const üye işlevler
+- static üye işlevler
+
+## 2019/10/03 Lecture 09
+
+- sınıfların kurucu işlevleri (constructors)
+- kurucu işlev ilk değer verme listesi (constructor initializer list)
+- delege eden kurucu işlevler (delegating constructors)
+- sınıfların sonlandırıcı işlevleri (destructors)
+
+## 2019/10/08 Lecture 10
 
 
+## 2020/01/07 Lecture 35
 
+- Lambda Expresssion
+- STL Algos
+- algoritmaların lambda ifadelerini kullanması
+- lambda ifadeleri
+- kapanış türleri ve kapanış nesneleri (closure types and closure objects)
+- lambda ifadeleri ve tür çıkarımı (lambda expressions and type deduction)
+- lambda yakalama ifadeleri (lambda captures)
+- lambda init capture
+- capture this 
+- capture *this
+- mutable lambdalar
+- trailing return type
+- genelleştirilmiş lambda ifadeleri (generalized lambda expressions)
+- algoritmalarda lambda ifadelerinin kullanımı
+
+## Butun Egitim Icerigi
 
 online C++ eğitimi içeriği
 C++ Dilinin Genel Tanıtımı
@@ -387,18 +415,20 @@ kap öğelerini konumlandıran algoritmalar (mutating algorithms)
 sıralama ile ilgili algoritmalar (sorting algorithms)
 sıralanmış aralıklar üzerinde koşturulan algoritmalar (sorted range algorithms)
 nümerik algoritmalar (numeric algorithms)
-algoritmaların lambda ifadelerini kullanması
-lambda ifadeleri
-kapanış türleri ve kapanış nesneleri (closure types and closure objects)
-lambda ifadeleri ve tür çıkarımı (lambda expressions and type deduction)
-lambda yakalama ifadeleri (lambda captures)
-lambda init capture
-capture this 
-capture *this
-mutable lambdalar
-trailing return type
-genelleştirilmiş lambda ifadeleri (generalized lambda expressions)
-algoritmalarda lambda ifadelerinin kullanımı
+
+- algoritmaların lambda ifadelerini kullanması
+- lambda ifadeleri
+- kapanış türleri ve kapanış nesneleri (closure types and closure objects)
+- lambda ifadeleri ve tür çıkarımı (lambda expressions and type deduction)
+- lambda yakalama ifadeleri (lambda captures)
+- lambda init capture
+- capture this 
+- capture *this
+- mutable lambdalar
+- trailing return type
+- genelleştirilmiş lambda ifadeleri (generalized lambda expressions)
+- algoritmalarda lambda ifadelerinin kullanımı
+
 Akıllı Gösterici Sınıfları (Standard Smart Pointer Classes)
 unique_ptr sınıfı
 std::make_unique
