@@ -92,6 +92,15 @@
 - genelleştirilmiş lambda ifadeleri (generalized lambda expressions)
 - algoritmalarda lambda ifadelerinin kullanımı
 
+## 2020/01/09 Lecture 36
+
+- Container lar uzerinde bazi silme algoritmalarinin kullanimi
+- Lambda expressions ile ilgili bazi yeni ozellikler C++17 ile gelen
+- Container lara giris
+- Kaplar(Containers)
+- STL kapları ve veri yapıları (STL containers & data structures) 
+
+
 ## Butun Egitim Icerigi
 
 online C++ eğitimi içeriği
@@ -382,25 +391,27 @@ move_iterator
 insert_iterator
 back_insert _iterator
 front_insert_iterator
-Kaplar(Containers)
-STL kapları ve veri yapıları (STL containers & data structures) 
-sıralı kaplar (sequence containers)
-std::vector
-std::deque
-std::string
-std:.array
-std::list
-std::forward_list
-ilişkisel kaplar (associative containers)
-std::set
-std::multiset
-std::map
-std::multimap
-sırasız ilişkisel kaplar (unordered containers)
-std::unordered_set
-std::unordered_multiset
-std::unordered_map
-std::unordered_multimap
+
+- Kaplar(Containers)
+- STL kapları ve veri yapıları (STL containers & data structures) 
+- sıralı kaplar (sequence containers)
+- std::vector
+- std::deque
+- std::string
+- std:.array
+- std::list
+- std::forward_list
+- ilişkisel kaplar (associative containers)
+- std::set
+- std::multiset
+- std::map
+- std::multimap
+- sırasız ilişkisel kaplar (unordered containers)
+- std::unordered_set
+- std::unordered_multiset
+- std::unordered_map
+- std::unordered_multimap
+
 kapların tür öğeleri (type members of containers)
 kapların emplace işlevleri
 Kap Uyumlandırıcıları (Container Adaptors)
