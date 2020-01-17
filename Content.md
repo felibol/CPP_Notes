@@ -100,6 +100,20 @@
 - Kaplar(Containers)
 - STL kapları ve veri yapıları (STL containers & data structures) 
 
+## 2020/01/14 Lecture 37
+
+- Vector
+
+## 2020/01/16 Lecture 38
+
+- Vector
+  - emplace funcs
+  - erase funcs
+  - iterator invalidation
+- deque
+  - comparison with vector
+  - differences in interfaces with vector
+  - iterator invalidation
 
 ## Butun Egitim Icerigi
 
