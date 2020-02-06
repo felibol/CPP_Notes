@@ -1,6 +1,0 @@
-[submodule "instructors_notes"]
-	path = instructors_notes
-	url = git@github.com:necatiergin/Cplusplus_Ders_Notlari.git
-[submodule "homeworks"]
-	path = homeworks
-	url = git@github.com:necatiergin/cpp_kursu_odevleri.git
