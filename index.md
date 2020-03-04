@@ -234,11 +234,30 @@
 
 ## [2020/02/20 Lecture 48](online_cpp_48_2020_02_20.md)
 
+- Private, protected inheritance
+- user defined literals
+- üye fonksiyon göstericileri `(member function pointers)`
+
 ## [2020/02/25 Lecture 49](online_cpp_49_2020_02_25.md)
+
+- Standart Giriş Çıkış Kütüphanesi `(iostream Library)`
+  - giriş çıkış akımlarına ilişkin standart sınıflar `(standard stream classes)`
+  - global akım nesneleri
+  - formatlı giriş çıkış işlemleri `(formatted input output)`
+  - << ve >> operatörlerinin yüklenmesi `(inserter & extractors)`
+  - formatlama ve formatlama işlemleri `(formatting)`
+  - manipülatörler `(manipulators)`
+  - akımın durumu `(condition states)`
+  - string akımları `(stringstreams)`
 
 ## [2020/02/27 Lecture 50](online_cpp_50_2020_02_27.md)
 
-## [2020/03/03 Lecture 51](online_cpp_51_2020_03_03.md)
+- Standart Giriş Çıkış Kütüphanesi `(iostream Library)`
+  - dosya işlemleri `(file operations)`
+  - bellek üstünde yapılan giriş çıkış işlemleri
+  - exception handling
+
+## 2020/03/03 Lecture 51 ( canceled)
 
 ## [2020/03/05 Lecture 52](online_cpp_52_2020_03_05.md)
 
