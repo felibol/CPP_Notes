@@ -19,7 +19,7 @@
 - auto
 - decltype
 
-## 2019/09/17 Lecture 05
+## [2019/09/17 Lecture 05](online_cpp_05_2019_09_17.md)
 
 - default argument
 - function overloading
@@ -257,10 +257,15 @@
   - bellek üstünde yapılan giriş çıkış işlemleri
   - exception handling
 
-## 2020/03/03 Lecture 51 ( canceled)
+## 2020/03/03 ( canceled)
 
-## [2020/03/05 Lecture 52](online_cpp_52_2020_03_05.md)
+## [2020/03/05 Lecture 51](online_cpp_51_2020_03_05.md)
 
-## [2020/03/10 Lecture 53](online_cpp_53_2020_03_10.md)
+- Standart Giriş Çıkış Kütüphanesi `(iostream Library)`
+- Random number generators
 
-## [2020/03/12 Lecture 54](online_cpp_54_2020_03_12.md)
+## [2020/03/10 Lecture 52](online_cpp_52_2020_03_10.md)
+
+## [2020/03/12 Lecture 53](online_cpp_53_2020_03_12.md)
+
+## [2020/03/12 Lecture 54](online_cpp_54_2020_03_17.md)
