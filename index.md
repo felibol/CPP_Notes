@@ -24,7 +24,7 @@
 - default argument
 - function overloading
 
-## 2019/09/19 Lecture 06
+## [2019/09/19 Lecture 06](online_cpp_06_2019_09_19.md)
 
 - function overload resolution
   - 1a- exact match
@@ -33,7 +33,7 @@
 - function delete
 - enum ve enum class
 
-## 2019/09/24 Lecture 07
+## [2019/09/24 Lecture 07](online_cpp_07_2019_09_24.md)
 
 - extern "C" bildirimi
 - Tur donusum operatorleri
@@ -43,7 +43,7 @@
 
 - Deprem nedeniyle iptal edildi.
 
-## 2019/10/01 Lecture 08
+## [2019/10/01 Lecture 08](online_cpp_08_2019_10_01.md)
 
 - Class member functions static, non static, const, non const
 - Function Overloading in classes
@@ -65,28 +65,28 @@
 - const üye işlevler
 - static üye işlevler
 
-## 2019/10/03 Lecture 09
+## [2019/10/03 Lecture 09](online_cpp_09_2019_10_03.md)
 
 - sınıfların kurucu işlevleri (constructors)
 - kurucu işlev ilk değer verme listesi (constructor initializer list)
 - delege eden kurucu işlevler (delegating constructors)
 - sınıfların sonlandırıcı işlevleri (destructors)
 
-## 2019/10/08 Lecture 10
+## [2019/10/08 Lecture 10](online_cpp_10_2019_10_08.md)
 
-## 2019/10/08 Lecture 11
+## [2019/10/08 Lecture 11](online_cpp_11_2019_10_10.md)
 
-## 2019/10/08 Lecture 12
+## [2019/10/08 Lecture 12](online_cpp_12_2019_10_15.md)
 
-## 2019/10/08 Lecture 13
+## [2019/10/08 Lecture 13](online_cpp_13_2019_10_17.md)
 
-## 2019/10/08 Lecture 14
+## [2019/10/08 Lecture 14](online_cpp_14_2019_10_22.md)
 
-## 2019/10/08 Lecture 15
+## [2019/10/08 Lecture 15](online_cpp_15_2019_10_24.md)
 
 ## [2019/10/08 Lecture 16](online_cpp_16_2019_10_29.md)
 
-## 2019/10/08 Lecture 17
+## [2019/10/08 Lecture 17](online_cpp_17_2019_10_31.md)
 
 ## [2019/10/08 Lecture 18](online_cpp_18_2019_11_05.md)
 
@@ -116,11 +116,11 @@
 
 ## [2019/10/08 Lecture 31](online_cpp_31_2019_12_19.md)
 
-## 2019/10/08 Lecture 32
+## [2019/10/08 Lecture 32](online_cpp_32_2019_12_24.md)
 
-## 2019/10/08 Lecture 33
+## [2019/10/08 Lecture 33](online_cpp_33_2019_12_26.md)
 
-## 2019/10/08 Lecture 34
+## [2019/10/08 Lecture 34](online_cpp_34_2020_01_02.md)
 
 ## [2020/01/07 Lecture 35](online_cpp_35_2020_01_07.md)
 
