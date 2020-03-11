@@ -1,6 +1,6 @@
 # Lecture Notes
 
-## 2019/09/03 Lecture 01
+## [2019/09/03 Lecture 01](online_cpp_01_2019_09_03.md)
 
 ## [2019/09/05 Lecture 02](online_cpp_02_2019_09_05.md)
 
