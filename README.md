@@ -22,7 +22,7 @@ Egitime bu [linkten](http://plepa.com/online-cpp-egitim-icerigi/) erisebilirsini
 + C dilinden C++ diline geçiş
 + işlev bildirimleri ve tanımlamalarına ilişkin farklılıklar
 + türlere ve tür dönüşümlerine ilişkin farklılıklar
-+ C’de geçerli C++’da geçersiz durumlar
++ C'de geçerli C++'da geçersiz durumlar
 + C99 ve C++
 
 ### Temel Kavramlar `(Basic Concepts)`
@@ -85,7 +85,7 @@ Egitime bu [linkten](http://plepa.com/online-cpp-egitim-icerigi/) erisebilirsini
 + genel kurallar
 + yüklenmiş işlev çözümlenmesi `(function overload resolution)`
 + const yüklemesi `(const overloading)`
-+ extern “C” bildirimi
++ extern "C" bildirimi
 + işlev yüklemesinde dikkat edilmesi gereken durumlar
 
 ### Tür Dönüştürme Operatörleri `(Type-cast Operators)`
@@ -460,7 +460,7 @@ sınıflar ve isim arama `(name lookup)`
 
 ### Tamamlayıcı Araçlar ve Sentaks Öğeleri
 
-+ static_assert 
++ static_assert
 + decltype(auto)
 + declval
 + üye fonksiyon göstericileri `(member function pointers)`
@@ -472,14 +472,14 @@ sınıflar ve isim arama `(name lookup)`
 + alignas belirteci `(alignas specifier)`
 + alignof operatörü `(alignof operator)`
 + yapısal bağlama `(structural binding) (C++17)`
-+ attribute’lar
++ attribute'lar
 
 ### Concurrency
 
 + memory model
-+ thread’ler ve thread yönetimi
++ thread'ler ve thread yönetimi
 + std::this_thread isim alanı
-+ data race kavramı ve data_race’den kaçınma
++ data race kavramı ve data_race'den kaçınma
 + standart mutex sınıfları ve mutex işlemleri
 + lock_guard ve unique_lock sınıfları
 + std::condition_variable sınıfı
