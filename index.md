@@ -41,8 +41,6 @@
 
 ## 2019/09/26 Canceled
 
-- Deprem nedeniyle iptal edildi.
-
 ## [2019/10/01 Lecture 08](online_cpp_08_2019_10_01.md)
 
 - Class member functions static, non static, const, non const
@@ -266,6 +264,17 @@
 
 ## [2020/03/10 Lecture 52](online_cpp_52_2020_03_10.md)
 
-## [2020/03/12 Lecture 53](online_cpp_53_2020_03_12.md)
+- random devami
+- ratio kutuphanesi
+- chrono kutuphanesi
 
-## [2020/03/12 Lecture 54](online_cpp_54_2020_03_17.md)
+## 2020/03/12 Lecture Canceled
+
+## [2020/03/17 Lecture 53](online_cpp_53_2020_03_17.md)
+
+- regex
+
+## [2020/03/19 Lecture 54](online_cpp_54_2020_03_19.md)
+
+- regex
+- class copy & swap idiom
